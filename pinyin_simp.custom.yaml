@@ -28,3 +28,7 @@ __patch:
   - patch/+:
       __include: lua_select_character:/patch
 # }
+# Rx: lotem/rime-octagram-data:customize:schema=pinyin_simp,model=hans {
+  - patch/+:
+      __include: grammar:/hans
+# }

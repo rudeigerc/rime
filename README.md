@@ -12,6 +12,9 @@ $ rime-install emoji:customize:schema=pinyin_simp
 $ rime-install essay-simp
 # https://github.com/BlindingDark/rime-lua-select-character
 $ rime-install BlindingDark/rime-lua-select-character:customize:schema=pinyin_simp
+# https://github.com/lotem/rime-octagram-data
+$ rime-install lotem/rime-octagram-data lotem/rime-octagram-data@hans
+$ rime-install lotem/rime-octagram-data:customize:schema=pinyin_simp,model=hans
 ```
 
 ## Imported Schemas
