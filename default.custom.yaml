@@ -1,6 +1,6 @@
 patch:
   schema_list:
-    - schema: pinyin_simp
+    - schema: luna_pinyin
     - schema: japanese
   ascii_composer:
     good_old_caps_lock: false
@@ -12,4 +12,3 @@ patch:
       Control_R: noop
   menu:
     page_size: 9
-

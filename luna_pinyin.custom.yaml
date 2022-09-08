@@ -1,0 +1,46 @@
+patch:
+  switches/@2/+:
+    reset: 1
+  schema/dependencies/+:
+    - melt_eng
+  melt_eng:
+    dictionary: melt_eng
+    enable_completion: true
+    enable_sentence: false
+    initial_quality: "-1"
+    spelling_hints: 9
+  engine/translators/+:
+    - table_translator@melt_eng
+    - lua_translator@date_translator
+  speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+  speller/algebra:
+    __patch:
+      - pinyin:/zh_z_bufen
+      - pinyin:/n_l_bufen
+      - pinyin:/r_l_bufen
+      - pinyin:/r_y_bufen
+      - pinyin:/hu_f_buhun
+      - pinyin:/eng_ong_bufen
+      - pinyin:/en_eng_bufen
+      - pinyin:/ziantuan
+      - pinyin:/zhongguan
+      - pinyin:/abbreviation
+      - pinyin:/spelling_correction
+      - pinyin:/key_correction
+  translator/preedit_format/+:
+    __patch:
+      - pinyin:/ziantuan_preedit_format
+      - pinyin:/zhongguan_preedit_format
+__patch:
+# Rx: emoji:customize:schema=luna_pinyin {
+  - patch/+:
+      __include: emoji_suggestion:/patch
+# }
+# Rx: BlindingDark/rime-lua-select-character:customize:schema=luna_pinyin {
+  - patch/+:
+      __include: lua_select_character:/patch
+# }
+# Rx: lotem/rime-octagram-data:customize:schema=luna_pinyin,model=hant {
+  - patch/+:
+      __include: grammar:/hant
+# }
