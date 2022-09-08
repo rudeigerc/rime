@@ -1,8 +1,3 @@
-__patch:
-# Rx: emoji:customize:schema=pinyin_simp {
-  - patch/+:
-      __include: emoji_suggestion:/patch
-# }
 patch:
   schema/dependencies/+:
     - melt_eng
@@ -24,3 +19,12 @@ patch:
     - derive/^l/n/                     # l => n
     - derive/([ei])n$/$1ng/            # en => eng, in => ing
     - derive/([ei])ng$/$1n/            # eng => en, ing => in
+__patch:
+# Rx: emoji:customize:schema=pinyin_simp {
+  - patch/+:
+      __include: emoji_suggestion:/patch
+# }
+# Rx: BlindingDark/rime-lua-select-character:customize:schema=pinyin_simp {
+  - patch/+:
+      __include: lua_select_character:/patch
+# }
