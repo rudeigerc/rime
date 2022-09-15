@@ -15,6 +15,8 @@ $ rime-install BlindingDark/rime-lua-select-character:customize:schema=luna_piny
 # https://github.com/lotem/rime-octagram-data
 $ rime-install lotem/rime-octagram-data lotem/rime-octagram-data@hant
 $ rime-install lotem/rime-octagram-data:customize:schema=luna_pinyin,model=hant
+# https://github.com/felixonmars/fcitx5-pinyin-zhwiki
+$ rime-install felixonmars/fcitx5-pinyin-zhwiki
 ```
 
 ## Installation
