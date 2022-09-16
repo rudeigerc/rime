@@ -3,8 +3,6 @@
 ```shell
 # https://github.com/rime/rime-luna-pinyin
 $ rime-install luna-pinyin
-# https://github.com/gkovacs/rime-japanese
-$ rime-install gkovacs/rime-japanese
 # https://github.com/rime/rime-emoji
 $ rime-install emoji
 $ rime-install emoji:customize:schema=luna_pinyin
